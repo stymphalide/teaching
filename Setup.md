@@ -119,3 +119,60 @@ Similar to VIM, those two were the standards for many years whoever did serious 
 
 ## The programming language
 Python is a modern multi-paradigm programming language. It is capable of scientific use and also to build application.
+
+Probably the easiest way to install python is 
+
+    sudo apt install python3.5 # Do not run this
+
+However, we are going to use another tool, that will make it easier to upgrade and maintain programming languages.
+
+### First we need to install git
+```shell
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install git
+```
+
+### Then we install asdf
+```shell
+$ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.1
+$ echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+$ echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+```
+### After that start a new shell and run
+```
+$ asdf plugin-add python https://github.com/tuvistavie/asdf-python.git
+$ asdf install python 3.6.0
+```
+
+### Now you're good to go
+
+    $ python
+
+By running python you enter the python command prompt there you can basically do everything you could when programming python, this tool is great for scribbling things down, but poor as soon as your code grows more complex.
+
+```python
+    >>> 1 + 1
+    2
+    >>> a = 5
+    5
+    >>> b = 8
+    8
+    >>> 
+```
+## Our first script
+Remember that `hello_world.py` file from before?
+Open that file in an editor of your choice.
+And enter the following python code:
+
+```python
+print("hello world")
+```
+
+## Run the script
+
+    $ cd develop/python/exercises
+    $ python hello_world.py
+    hello world
+
+And that's it!

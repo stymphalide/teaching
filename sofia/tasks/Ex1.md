@@ -58,3 +58,9 @@ Make sure the outputs look as follows for the following commands:
 >>> set.create_set(card_one, card_two)
 {'number': 3, 'shape': 'saussice', 'filling': 'striped', 'colour': 'green'}
 ```
+
+## Hints
+Check these links:
+[Add new keys to dict](https://stackoverflow.com/questions/1024847/add-new-keys-to-a-dictionary)
+[How to Copy a List](https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list)
+[How to remove specific elments from a list](https://stackoverflow.com/questions/7118276/how-to-remove-specific-element-in-an-array-using-python)
